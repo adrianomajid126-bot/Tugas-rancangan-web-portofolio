@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>portofolio adriano majid</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#d9d9d9;
+}
+
+.container{
+    width:80%;
+    margin:20px auto;
+}
+
+/* Banner */
+.banner{
+    height:200px;
+    background:linear-gradient(to right,#1e3c72,#2a5298);
+    color:white;
+    text-align:center;
+    padding-top:50px;
+}
+
+.banner h1{
+    font-size:45px;
+}
+
+.banner p{
+    font-size:20px;
+}
+
+/* Konten */
+.content{
+    display:flex;
+    min-height:550px;
+}
+
+/* Menu */
+.menu{
+    width:30%;
+    background:#f4c430;
+    padding:25px;
+}
+
+.menu button{
+    width:100%;
+    padding:15px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    background:white;
+}
+
+.menu button:hover{
+    background:#1e3c72;
+    color:white;
+}
+
+/* Isi */
+.isi{
+    width:70%;
+    background:#6b2c2c;
+    color:white;
+    padding:25px;
+}
+
+.box{
+    display:none;
+}
+
+.box.active{
+    display:block;
+}
+
+.box h2{
+    color:#ffd700;
+    margin-bottom:15px;
+}
+
+.box p{
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* Footer */
+.footer{
+    background:#008b8b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Adrinao majid</h1>
+        <p>Calon ENGINEER PT.FREEPORT INDONESIA 5 Tahun Mendatang</p>
+    </div>
+
+    <div class="content">
+
+        <!-- Menu -->
+        <div class="menu">
+            <button onclick="tampil('profil')">Profil</button>
+            <button onclick="tampil('portofolio')">Portofolio 5 Tahun</button>
+            <button onclick="tampil('pendidikan')">Riwayat Pendidikan</button>
+            <button onclick="tampil('organisasi')">Riwayat Organisasi</button>
+            <button onclick="tampil('pekerjaan')">Riwayat Pekerjaan</button>
+            <button onclick="tampil('karya')">Karya Tulis/Produk</button>
+        </div>
+
+        <!-- Isi -->
+        <div class="isi">
+
+            <div id="profil" class="box active">
+                <h2>Profil</h2>
+                <p>
+                    Nama saya <b>Adriano majid</b>, 
+                    Mahasiswa/Fresh Graduate yang memiliki minat dalam industri pertambangan,
+                    keselamatan kerja, \
+                    dan pengelolaan sumber daya alam. Memiliki kemampuan komunikasi yang baik,
+                    mampu bekerja dalam tim, 
+                    serta menguasai dasar-dasar komputer dan pengolahan data. Siap belajar,
+                    bekerja keras, dan beradaptasi dengan 
+                    lingkungan kerja pertambangan untuk mendukung pencapaian target perusahaan.
+                    
+                    
+                </p>
+            </div>
+
+            <div id="portofolio" class="box">
+                <h2>Portofolio Diri 5 Tahun Mendatang</h2>
+                <p>
+                    Lima tahun dari sekarang, saya telah menyelesaikan 
+                    pendidikan sarjana dan melanjutkan studi ke jenjang 
+                    magister (S2) untuk mendukung cita-cita menjadi ENGINEER di 
+                    PT. FREEPORT INDONESIA.
+                </p>
+
+                <p>
+                    Saya aktif melakukan penelitian, mengikuti seminar, 
+                    pelatihan, serta mengembangkan kemampuan akademik dan 
+                    keterampilan.
+                </p>
+
+                <p>
+                    Saya bercita-cita menjadi ENGINEER yang mampu mengambungkan
+                    Tenik pertambangan dengan teknologi digital,merancang dan memelihara sistem
+                    kontrol untuk peralatan tambang dan pabrik pengelahan.
+                     
+                
+                </p>
+            </div>
+
+            <div id="pendidikan" class="box">
+                <h2>Riwayat Pendidikan</h2>
+                <p>
+                    • Madrasah Ibtidaiyah (MI)<br>
+                    • Madrasah Tsanawiyah (MTS)<br>
+                    • Sekolah Menengah Kejuruan (SMK)<br>
+                    • Perguruan Tinggi (S1)<br>
+                    • Pendidikan Magister (S2)
+                </p>
+            </div>
+
+            <div id="organisasi" class="box">
+                <h2>Riwayat Organisasi</h2>
+                <p>
+                    • Anggota Pramuka<br>
+                    • Mengikuti kegiatan organisasi untuk melatih jiwa 
+                    kepemimpinan dan kemampuan berkomunikasi.<br>
+                    • Kementrian Energi dan sumber daya mineral.<br>
+                    • instansi pemerintahan yang mengatur sektor pertambangan
+                    dan energi.<br>
+                    • Ikatan Ahli Geologi Indonesian.<br>
+                    • Organisasi profesi geologi yang banyak berkaitan dengan 
+                    eksplorasi tambang.<br>
+                </p>
+            </div>
+
+            <div id="pekerjaan" class="box">
+                <h2>Riwayat Pekerjaan</h2>
+                <p>
+                    Data Engineer (Mining Technology)  
+                    PT. JAMBI PRIMA COAL <br>
+                    • mengembangkan sistem pengolahan data produksi tambang
+                    menggunakan python dan SQL.<br>
+                    • Membuat dashboard monitoring produksi dan alat berat.<br>
+                    • Berkolaborasi dengan tim operasional untuk analisis
+                    data.<br> 
+                    
+                </p>
+            </div>
+
+            <div id="karya" class="box">
+                <h2>Karya Tulis / Produk</h2>
+                <p>
+                    • Artikel ilmiah di bidang pertambangan<br>
+                    • Hasil penelitian sektor tambang<br>
+                    • Modul dan media tambang
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        "TANGGUH."
+    </div>
+
+</div>
+
+<script>
+function tampil(id){
+    let semua = document.querySelectorAll(".box");
+
+    semua.forEach(function(box){
+        box.classList.remove("active");
+    });
+
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
